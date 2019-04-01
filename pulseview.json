@@ -1,0 +1,43 @@
+{
+    "homepage": "https://sigrok.org/",
+    "license": "GPL-3.0-or-later",
+    "version": "0.4.1",
+    "architecture": {
+        "32bit": {
+            "url": "https://sigrok.org/download/binary/pulseview/pulseview-0.4.1-32bit-static-release-installer.exe#dl.7z",
+            "hash": "93ff2a99ff502060826162901518240503775cb2938869536ae07068831141cc"
+        },
+        "64bit": {
+            "url": "https://sigrok.org/download/binary/pulseview/pulseview-0.4.1-64bit-static-release-installer.exe#dl.7z",
+            "hash": "e40e24cd90459a865a37028b9b9b72100db9646b2fbd30135c18b2ee96332bcd"
+        }
+    },
+    "bin": [
+        "pulseview.exe",
+        "zadig.exe"
+    ],
+    "shortcuts": [
+        [
+            "pulseview.exe",
+            "Pulseview"
+        ],
+        [
+            "zadig.exe",
+            "Zadig"
+        ]
+    ],
+    "checkver": {
+        "url": "https://sigrok.org/download/binary/pulseview/",
+        "re": "pulseview-([\\w\\.]+)-32bit-static-release-installer.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://sigrok.org/download/binary/pulseview/pulseview-$version-32bit-static-release-installer.exe#dl.7z"
+            },
+            "64bit": {
+                "url": "https://sigrok.org/download/binary/pulseview/pulseview-$version-64bit-static-release-installer.exe#dl.7z"
+            }
+        }
+    }
+}

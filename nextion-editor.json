@@ -1,0 +1,20 @@
+{
+    "homepage": "https://nextion.itead.cc/",
+    "version": "0.53",
+    "url": "http://nextion.itead.cc/download/nextion-setup-v053.zip",
+    "hash": "36c7b36433075fff1d0686e25fa6903bdb98055d726635c0bbd7ea22390350b6",
+    "bin": "NextionEditor.exe",
+    "shortcuts": [
+        [
+            "NextionEditor.exe",
+            "Nextion Editor"
+        ]
+    ],
+    "checkver": {
+        "url": "https://nextion.itead.cc/resources/download/",
+        "re": "Nextion Editor v([\\w.]+)"
+    },
+    "autoupdate": {
+        "url": "http://nextion.itead.cc/download/nextion-setup-v$cleanVersion.zip"
+    }
+}

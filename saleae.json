@@ -1,0 +1,28 @@
+{
+    "homepage": "https://saleae.com/",
+    "version": "1.2.18",
+    "url": "https://downloads.saleae.com/logic/1.2.18/Logic%20Setup%201.2.18.exe#/installer.exe",
+    "hash": "9627e5d0e27d71a6705e2a0ca2258bd1a587efb6cf9714b004f9de339c042eb8",
+    "installer": {
+        "script": [
+            "Start-Process -Wait -FilePath \"$dir\\installer.exe\" -ArgumentList \"/extract:asd\" | out-null",
+            "extract_7zip \"$dir\\disk1.cab\" \"$dir\""
+        ]
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist2015"
+    },    "bin": "Logic.exe",
+    "shortcuts": [
+        [
+            "Logic.exe",
+            "Saleae Logic"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.saleae.com/downloads/",
+        "re": "https://downloads.saleae.com/logic/([\\w\\.]+)/"
+    },
+    "autoupdate": {
+        "url": "https://downloads.saleae.com/logic/1.2.18/Logic%20Setup%20$version.exe"
+    }
+}
