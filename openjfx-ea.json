@@ -1,0 +1,27 @@
+{
+    "homepage": "https://openjfx.io/",
+    "license": "GPL-2.0-with-classpath-exception",
+    "version": "13-ea+8",
+    "url": "https://download2.gluonhq.com/openjfx/13/openjfx-13-ea+8_windows-x64_bin-sdk.zip",
+    "hash": "ba21b9d3efd263bc603aee333817e1f72f14b2b613c245b829b4eb4381ffc083",
+    "extract_dir": "javafx-sdk-13-ea+8",
+    "bin": [
+        [
+            "java.exe",
+            "javafx",
+            "--module-path $dir/lib --add-modules javafx.controls,javafx.fxml"
+        ]
+    ],
+    "checkver": {
+        "url": "https://gluonhq.com/products/javafx/",
+        "re": "openjfx-([\\d]+-ea\\+[\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://download2.gluonhq.com/openjfx/$majorVersion/openjfx-$version_windows-x64_bin-sdk.zip",
+        "hash": {
+            "url": "$url.sha256",
+            "find": "\\s+([a-fA-F\\d]{64})$"
+        },
+        "extract_dir": "javafx-sdk-$version"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "homepage": "https://github.com/igrr/esptool-ck",
+    "license": "GPLGPL-2.0-only",
+    "version": "0.4.13",
+    "url": "https://github.com/igrr/esptool-ck/releases/download/0.4.13/esptool-0.4.13-win32.zip",
+    "hash": "17c1035aacd8f6dbfbc04ed899f5db0ceba60820592705a9c6011476ab8d1687",
+    "extract_dir": "esptool-0.4.13-win32",
+    "bin": [
+        [
+            "esptool.exe",
+            "esptool"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/igrr/esptool-ck"
+    },
+    "autoupdate": {
+        "url": "https://github.com/igrr/esptool-ck/releases/download/$version/esptool-$version-win32.zip",
+        "extract_dir": "esptool-$version-win32",
+        "hash": {
+            "url": "$baseurl/esptool-$version-win32.sha256.txt",
+            "find": "\\s+([a-fA-F\\d]{64})$"
+        }
+    }
+}
