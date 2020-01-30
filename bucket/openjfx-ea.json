@@ -1,10 +1,10 @@
 {
     "homepage": "https://openjfx.io/",
     "license": "GPL-2.0-with-classpath-exception",
-    "version": "13-ea+8",
-    "url": "https://download2.gluonhq.com/openjfx/13/openjfx-13-ea+8_windows-x64_bin-sdk.zip",
-    "hash": "ba21b9d3efd263bc603aee333817e1f72f14b2b613c245b829b4eb4381ffc083",
-    "extract_dir": "javafx-sdk-13-ea+8",
+    "version": "14-ea+7",
+    "url": "https://download2.gluonhq.com/openjfx/14/openjfx-14-ea+7_windows-x64_bin-sdk.zip",
+    "hash": "fec6d840226240db2619b4f036388ae741b1cb42407ff97a03c55d7d3052aafd",
+    "extract_dir": "javafx-sdk-14-ea+7",
     "bin": [
         [
             "java.exe",
