@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.screenpresso.com/",
     "license": "https://www.screenpresso.com/software-license-agreement/",
-    "version": "1.8.0",
-    "url": "https://cdn.screenpresso.com/binaries/v1/Screenpresso.exe",
-    "hash": "5fbaeed37029d04df451338cc013d57add5c5bedfcf4c941ffa86bdd680f37eb",
+    "version": "1.8.3",
+    "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe",
+    "hash": "98d89beba24ffe466619615269686472f2e886cd8bb646161018bf64bcf77dd1",
     "bin": [
         [
             "Screenpresso.exe",
@@ -43,6 +43,6 @@
         "re": "Latest version \\(([\\w\\.]+)\\)"
     },
     "autoupdate": {
-        "url": "https://cdn.screenpresso.com/binaries/v1/Screenpresso.exe"
+        "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe"
     }
 }
