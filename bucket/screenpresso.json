@@ -20,20 +20,24 @@
     ],
     "pre_install": "if (!(Test-Path \"$dir\\settings.xml\")) { New-Item -Force \"$dir\\settings.xml\" -ItemType File | out-null }",
     "post_install": [
-        "if (Test-Path \"$dir\\Screenshots_bak\") { Move-Item \"$dir\\Screenshots_bak\\*.*\" -Destination \"$dir\" }",
+        "if (Test-Path \"$dir\\media_bak\") { Move-Item \"$dir\\media_bak\\*.*\" -Destination \"$dir\" }",
         "if ((Get-Content \"$dir\\settings.xml\") -eq $Null) { Remove-Item \"$dir\\settings.xml\" }"
     ],
     "uninstaller": {
         "script": [
-            "Move-Item \"$dir\\*.jpg\" -Destination \"$dir\\Screenshots_bak\"",
-            "Move-Item \"$dir\\*.gif\" -Destination \"$dir\\Screenshots_bak\"",
-            "Move-Item \"$dir\\*.png\" -Destination \"$dir\\Screenshots_bak\"",
-            "Move-Item \"$dir\\*.bmp\" -Destination \"$dir\\Screenshots_bak\"",
-            "Move-Item \"$dir\\*.tif\" -Destination \"$dir\\Screenshots_bak\""
+            "Move-Item \"$dir\\*.jpg\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.gif\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.png\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.bmp\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.tif\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.mp4\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.wmv\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.ogv\" -Destination \"$dir\\media_bak\"",
+            "Move-Item \"$dir\\*.webm\" -Destination \"$dir\\media_bak\""
         ]
     },
     "persist": [
-        "Screenshots_bak",
+        "media_bak",
         "BrandedScreenshots",
         "Thumbnails",
         "settings.xml"
