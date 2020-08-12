@@ -20,27 +20,27 @@
     ],
     "pre_install": "if (!(Test-Path \"$dir\\settings.xml\")) { New-Item -Force \"$dir\\settings.xml\" -ItemType File | out-null }",
     "post_install": [
-        "if (Test-Path \"$dir\\media_bak\") { Move-Item \"$dir\\media_bak\\*.*\" -Destination \"$dir\" }",
-        "if ((Get-Content \"$dir\\settings.xml\") -eq $Null) { Remove-Item \"$dir\\settings.xml\" }"
+        "if ((Get-Content \"$dir\\settings.xml\") -eq $Null) { Remove-Item \"$dir\\settings.xml\" }",
+        "if (Test-Path \"$dir\\UpdateBackup\") { Move-Item \"$dir\\UpdateBackup\\*.*\" -Destination \"$dir\" }",
     ],
     "uninstaller": {
         "script": [
-            "Move-Item \"$dir\\*.jpg\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.gif\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.png\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.bmp\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.tif\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.mp4\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.wmv\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.ogv\" -Destination \"$dir\\media_bak\"",
-            "Move-Item \"$dir\\*.webm\" -Destination \"$dir\\media_bak\""
+            "Move-Item \"$dir\\settings.xml\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.jpg\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.gif\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.png\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.bmp\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.tif\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.mp4\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.wmv\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.ogv\" -Destination \"$dir\\UpdateBackup\"",
+            "Move-Item \"$dir\\*.webm\" -Destination \"$dir\\UpdateBackup\""
         ]
     },
     "persist": [
-        "media_bak",
+        "UpdateBackup",
         "BrandedScreenshots",
-        "Thumbnails",
-        "settings.xml"
+        "Thumbnails"
     ],
     "checkver": {
         "url": "https://www.screenpresso.com/download/",
