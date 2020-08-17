@@ -21,7 +21,7 @@
     "pre_install": "if (!(Test-Path \"$dir\\settings.xml\")) { New-Item -Force \"$dir\\settings.xml\" -ItemType File | out-null }",
     "post_install": [
         "if ((Get-Content \"$dir\\settings.xml\") -eq $Null) { Remove-Item \"$dir\\settings.xml\" }",
-        "if (Test-Path \"$dir\\UpdateBackup\") { Move-Item \"$dir\\UpdateBackup\\*.*\" -Destination \"$dir\" }",
+        "if (Test-Path \"$dir\\UpdateBackup\") { Move-Item \"$dir\\UpdateBackup\\*.*\" -Destination \"$dir\" }"
     ],
     "uninstaller": {
         "script": [
