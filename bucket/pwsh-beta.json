@@ -1,0 +1,30 @@
+{
+    "homepage": "https://github.com/PowerShell/PowerShell",
+    "license": "MIT",
+    "version": "7.1.0-rc.2",
+    "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.1.0-rc.2/PowerShell-7.1.0-rc.2-win-x64.zip",
+    "hash": "b8496cc53ebf5651cc31006aa5a8e85a83ec226dfd22a963f291f41270307194",
+    "bin": [
+        [
+            "pwsh.exe",
+            "pwsh-beta"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "pwsh.exe",
+            "PowerShell Core (Beta)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/PowerShell/PowerShell/releases",
+        "re": "/releases/tag/(?:v|V)?([\\d.]+-(rc|preview)[\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-win-x64.zip",
+        "hash": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/tag/v$version",
+            "find": "-win-x64\\.zip\\s*<ul>\\s*<li>([a-fA-F\\d]{64})<"
+        }
+    }
+}

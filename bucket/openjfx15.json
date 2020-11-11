@@ -1,10 +1,10 @@
 {
     "homepage": "https://openjfx.io/",
     "license": "GPL-2.0-with-classpath-exception",
-    "version": "16-ea+4",
-    "url": "https://download2.gluonhq.com/openjfx/16/openjfx-16-ea+4_windows-x64_bin-sdk.zip",
-    "hash": "44313d64263ef1948cc29634c074b450b33140290652c2db8184cb6f34dd1dc9",
-    "extract_dir": "javafx-sdk-16-ea+4",
+    "version": "15.0.1",
+    "url": "https://download2.gluonhq.com/openjfx/15.0.1/openjfx-15.0.1_windows-x64_bin-sdk.zip",
+    "hash": "26958610bb5ea01ef0839644068e2a4c4143a6e20f330bfee0f6c9e6109b0f8f",
+    "extract_dir": "javafx-sdk-15.0.1",
     "bin": [
         [
             "java.exe",
@@ -14,10 +14,10 @@
     ],
     "checkver": {
         "url": "https://gluonhq.com/products/javafx/",
-        "re": "openjfx-([\\d]+-ea\\+[\\d]+)"
+        "re": "(15\\.[\\d]+\\.[\\d]+)"
     },
     "autoupdate": {
-        "url": "https://download2.gluonhq.com/openjfx/$majorVersion/openjfx-$version_windows-x64_bin-sdk.zip",
+        "url": "https://download2.gluonhq.com/openjfx/$version/openjfx-$version_windows-x64_bin-sdk.zip",
         "hash": {
             "url": "$url.sha256",
             "find": "\\s+([a-fA-F\\d]{64})$"
