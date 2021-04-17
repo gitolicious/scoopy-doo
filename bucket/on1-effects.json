@@ -7,6 +7,6 @@
     "hash": "b2597184bea993ff6072ee222839ed6ed1cbd20e37253deab17e3ef3a087fc15",
     "checkver": {
         "url": "https://on1help.zendesk.com/hc/en-us/articles/360026688792-ON1-Effects-2019-7-Release-Notes-and-Installation-Instructions",
-        "regex": "\\(([0-9.]+)\\)"
+        "regex": "\\(([0-9.]+)\\) Win"
     }
 }

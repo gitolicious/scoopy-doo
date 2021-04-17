@@ -1,8 +1,8 @@
 {
     "homepage": "https://nextion.tech/",
-    "version": "0.53",
-    "url": "https://nextion.tech/download/nextion-setup-v053.zip",
-    "hash": "36c7b36433075fff1d0686e25fa6903bdb98055d726635c0bbd7ea22390350b6",
+    "version": "1.62.1",
+    "url": "https://nextion.tech/download/nextion-setup-v1-62-1.zip",
+    "hash": "21d1613a526ed8551b81441b782fc080bfc19806b163da139900adf65736f51d",
     "bin": "NextionEditor.exe",
     "shortcuts": [
         [
@@ -12,9 +12,9 @@
     ],
     "checkver": {
         "url": "https://nextion.tech/resources/download/",
-        "re": "Nextion Editor v([\\w.]+)"
+        "re": "Nextion Editor ver ([\\w.]+)"
     },
     "autoupdate": {
-        "url": "https://nextion.tech/download/nextion-setup-v$cleanVersion.zip"
+        "url": "https://nextion.tech/download/nextion-setup-v$dashVersion.zip"
     }
 }

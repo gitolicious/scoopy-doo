@@ -1,0 +1,20 @@
+{
+    "homepage": "https://joytokey.net/",
+    "license": "Shareware",
+    "version": "6.6",
+    "url": "https://joytokey.net/download/JoyToKey_en.zip",
+    "hash": "c882ea3d2962e0013fc4df90addfa422a29af3f9085dcf21900b6f38f3168289",
+    "shortcuts": [
+        [
+            "JoyToKey.exe",
+            "JoyToKey"
+        ]
+    ],
+    "checkver": {
+        "url": "https://joytokey.net/en/news",
+        "re": "JoyToKey ([\\d]+\\.[\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://joytokey.net/download/JoyToKey_en.zip"
+    }
+}

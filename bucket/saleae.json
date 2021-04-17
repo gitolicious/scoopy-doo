@@ -1,8 +1,8 @@
 {
     "homepage": "https://saleae.com/",
-    "version": "1.2.18",
-    "url": "https://downloads.saleae.com/logic/1.2.18/Logic%20Setup%201.2.18.exe#/installer.exe",
-    "hash": "9627e5d0e27d71a6705e2a0ca2258bd1a587efb6cf9714b004f9de339c042eb8",
+    "version": "2.3.26",
+    "url": "https://downloads.saleae.com/logic2/Logic%20Setup%202.3.26-master.exe",
+    "hash": "d278d509acdf9568bfbc05299b6470a59fa49ad88197cc01e70a0102e48e6236",
     "installer": {
         "script": [
             "Start-Process -Wait -FilePath \"$dir\\installer.exe\" -ArgumentList \"/extract:asd\" | out-null",
@@ -11,7 +11,8 @@
     },
     "suggest": {
         "vcredist": "extras/vcredist2015"
-    },    "bin": "Logic.exe",
+    },
+    "bin": "Logic.exe",
     "shortcuts": [
         [
             "Logic.exe",
@@ -19,10 +20,10 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.saleae.com/downloads/",
-        "re": "https://downloads.saleae.com/logic/([\\w\\.]+)/"
+        "url": "https://discuss.saleae.com/c/downloads/5",
+        "re": "Logic\\s+([\\d].[\\d].[\\w]+)"
     },
     "autoupdate": {
-        "url": "https://downloads.saleae.com/logic/1.2.18/Logic%20Setup%20$version.exe"
+        "url": "https://downloads.saleae.com/logic2/Logic%20Setup%20$version-master.exe"
     }
 }
