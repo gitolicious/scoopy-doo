@@ -1,8 +1,8 @@
 {
     "homepage": "https://nextion.tech/",
-    "version": "1.62.1",
-    "url": "https://nextion.tech/download/nextion-setup-v1-62-1.zip",
-    "hash": "21d1613a526ed8551b81441b782fc080bfc19806b163da139900adf65736f51d",
+    "version": "1.63.3",
+    "url": "https://nextion.tech/download/nextion-setup-v1-63-3.zip",
+    "hash": "d84ff7d725c26314dba5e8bcc24ca99d92be12bebe103bdcf7d21436ab66ef69",
     "bin": "NextionEditor.exe",
     "shortcuts": [
         [

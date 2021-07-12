@@ -1,21 +1,21 @@
 {
     "homepage": "https://www.screenpresso.com/",
     "license": "https://www.screenpresso.com/software-license-agreement/",
-    "version": "1.9.5",
+    "version": "1.10.2",
     "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe",
-    "hash": "3affb1c2600429b0f4f017c4114490cabcda7fe5014a6d7268f005acd7b047ab",
+    "hash": "81ece7f9687007e4e1896451b348820c1d44422e1d3bed3e58b2e6ac7b33eb5f",
     "bin": [
         [
             "Screenpresso.exe",
             "screenpresso",
-            "-portablemode"
+            "--portablemode"
         ]
     ],
     "shortcuts": [
         [
             "Screenpresso.exe",
             "Screenpresso",
-            "-portablemode"
+            "--portablemode"
         ]
     ],
     "pre_install": "if (!(Test-Path \"$dir\\settings.xml\")) { New-Item -Force \"$dir\\settings.xml\" -ItemType File | out-null }",
