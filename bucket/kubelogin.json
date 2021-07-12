@@ -1,0 +1,30 @@
+{
+    "homepage": "https://github.com/int128/kubelogin",
+    "license": "Apache 2.0",
+    "version": "1.23.3",
+    "url": "https://github.com/int128/kubelogin/releases/download/v1.23.3/kubelogin_windows_amd64.zip",
+    "hash": "42a0e3aad8b98374062b10e8b9466ef2f8f7e79b0b12051f4114f0197d9abc54",
+    "suggest": {
+        "kubectl": "kubectl"
+    },
+    "bin": [
+        [
+            "kubelogin.exe",
+            "kubelogin"
+        ],
+        [
+            "kubelogin.exe",
+            "kubectl-oidc_login"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/int128/kubelogin"
+    },
+    "autoupdate": {
+        "url": "https://github.com/int128/kubelogin/releases/download/v$version/kubelogin_windows_amd64.zip",
+        "hash": {
+            "url": "$baseurl/kubelogin_windows_amd64.zip.sha256",
+            "find": "\\s+([a-fA-F\\d]{64})$"
+        }
+    }
+}
