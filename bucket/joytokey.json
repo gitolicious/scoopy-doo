@@ -1,9 +1,9 @@
 {
     "homepage": "https://joytokey.net/",
     "license": "Shareware",
-    "version": "6.6",
+    "version": "6.7",
     "url": "https://joytokey.net/download/JoyToKey_en.zip",
-    "hash": "c882ea3d2962e0013fc4df90addfa422a29af3f9085dcf21900b6f38f3168289",
+    "hash": "8a2007f4bfbcd0649da2f45023645473400929ca0bb42732478c77eaa27e9256",
     "shortcuts": [
         [
             "JoyToKey.exe",
