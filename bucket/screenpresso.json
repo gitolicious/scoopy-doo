@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.screenpresso.com/",
     "license": "https://www.screenpresso.com/software-license-agreement/",
-    "version": "1.10.3",
+    "version": "1.10.5",
     "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe",
-    "hash": "f183676771863e395fdba50929e95a0c6024b8d378e9d9e019837870a63e1199",
+    "hash": "10dca733f1eb9ba940fe3b6ae9c276739188c193d07079b5b8795bd4937799e8",
     "bin": [
         [
             "Screenpresso.exe",

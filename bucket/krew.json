@@ -1,9 +1,9 @@
 {
     "homepage": "https://krew.sigs.k8s.io/",
     "license": "Apache 2.0",
-    "version": "0.4.1",
-    "url": "https://github.com/kubernetes-sigs/krew/releases/download/v0.4.1/krew.exe",
-    "hash": "d749605f076728452748b53a2d744a9a63d0472d37edb5d37522267352745fd6",
+    "version": "0.4.2",
+    "url": "https://github.com/kubernetes-sigs/krew/releases/download/v0.4.2/krew.exe",
+    "hash": "2729c298b5d90b531585939f080a3968c1a672e6223b4313eea8adb5396b4840",
     "bin": [
         [
             "krew.exe",

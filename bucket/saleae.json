@@ -1,8 +1,8 @@
 {
     "homepage": "https://saleae.com/",
-    "version": "2.3.37",
-    "url": "https://downloads.saleae.com/logic2/Logic%20Setup%202.3.37-master.exe",
-    "hash": "db6b0723d09c5672c2b208fc45c61b91606145d9c9a8a08272e6349f82b55968",
+    "version": "2.3.39",
+    "url": "https://downloads.saleae.com/logic2/Logic%20Setup%202.3.39-master.exe",
+    "hash": "75a50f77178312c8be7fcd45acf36944fc20f061d1d310bece7d680534f06a9f",
     "installer": {
         "script": [
             "Start-Process -Wait -FilePath \"$dir\\installer.exe\" -ArgumentList \"/extract:asd\" | out-null",
