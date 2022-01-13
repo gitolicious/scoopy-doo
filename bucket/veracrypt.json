@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.veracrypt.fr/",
     "license": "tbd",
-    "version": "1.24-Update7",
-    "url": "https://launchpad.net/veracrypt/trunk/1.24-update7/+download/VeraCrypt%20Portable%201.24-Update7.exe#/dl.7z",
-    "hash": "33c38c1424f51b4243a840272832d4566a635e42b6a49aab281754bc9f399ea8",
+    "version": "1.25.7",
+    "url": "https://launchpad.net/veracrypt/trunk/1.25.7/+download/VeraCrypt%20Portable%201.25.7.exe#/dl.7z",
+    "hash": "30e8048de1ff5a18c70e0b6c7e23218b1d63ed7537c4212684490de92da16614",
     "bin": [
         [
             "veracrypt.exe"
@@ -11,7 +11,7 @@
     ],
     "checkver": {
         "url": "https://www.veracrypt.fr/en/Downloads.html",
-        "re": "\\/trunk\\/(?<folder>[\\w.-]+)\\/&#43;download\\/VeraCrypt%20Setup%20(?<version>[\\w.-]+)\\.exe"
+        "re": "/trunk/(?<folder>[\\w.-]+)/\\+download/VeraCrypt%20Portable%20(?<version>[\\w.-]+)\\.exe"
     },
     "autoupdate": {
         "url": "https://launchpad.net/veracrypt/trunk/$matchFolder/+download/VeraCrypt%20Portable%20$version.exe#/dl.7z"
