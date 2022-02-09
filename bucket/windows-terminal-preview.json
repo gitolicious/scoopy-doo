@@ -1,13 +1,13 @@
 {
-    "version": "1.12.3472.0",
+    "version": "1.12.10335.0",
     "description": "The new Windows Terminal, and the original Windows console host - all in the same place! (Preview Version)",
     "homepage": "https://github.com/microsoft/terminal",
     "license": "MIT",
     "suggest": {
         "vcredist": "extras/vcredist2019"
     },
-    "url": "https://github.com/microsoft/terminal/releases/download/v1.12.3472.0/Microsoft.WindowsTerminalPreview_1.12.3472.0_8wekyb3d8bbwe.msixbundle#/dl.7z",
-    "hash": "715f0ca49ad280f441de8edf48f7498c7a3b36ae7dd3796aaa7e2da4dc5f4761",
+    "url": "https://github.com/microsoft/terminal/releases/download/v1.13.10336.0/Microsoft.WindowsTerminalPreview_1.12.10335.0_8wekyb3d8bbwe.msixbundle#/dl.7z",
+    "hash": "df4072b862b8997e35ceb5d9ab1e4d01e0d0cac72d1b4e3ecf57808003234989",
     "architecture": {
         "64bit": {
             "pre_install": "Get-ChildItem \"$dir\" -Exclude '*x64.msix' | Remove-Item -Force -Recurse"
@@ -42,9 +42,9 @@
     ],
     "checkver": {
         "url": "https://github.com/microsoft/terminal/releases",
-        "regex": "WindowsTerminalPreview_([\\d.]+)_8wekyb3d8bbwe\\.msixbundle"
+        "regex": "/microsoft/terminal/releases/download/v(?<release>[\\d.]+)/Microsoft.WindowsTerminalPreview_([\\d.]+)_8wekyb3d8bbwe.msixbundle"
     },
     "autoupdate": {
-        "url": "https://github.com/microsoft/terminal/releases/download/v$version/Microsoft.WindowsTerminalPreview_$version_8wekyb3d8bbwe.msixbundle#/dl.7z"
+        "url": "https://github.com/microsoft/terminal/releases/download/v$matchRelease/Microsoft.WindowsTerminalPreview_$version_8wekyb3d8bbwe.msixbundle#/dl.7z"
     }
 }
