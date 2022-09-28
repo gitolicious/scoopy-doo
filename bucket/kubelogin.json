@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/int128/kubelogin",
     "license": "Apache 2.0",
-    "version": "1.25.2",
-    "url": "https://github.com/int128/kubelogin/releases/download/v1.25.2/kubelogin_windows_amd64.zip",
-    "hash": "2db37991462ca19acdaca25eff025ad9e13ca0f0943ed985505269963c26baa4",
+    "version": "1.25.3",
+    "url": "https://github.com/int128/kubelogin/releases/download/v1.25.3/kubelogin_windows_amd64.zip",
+    "hash": "0398922fb50411119fe110ebb4e0e15d8725890ce764b3996b0563c5478c4148",
     "suggest": {
         "kubectl": "kubectl"
     },

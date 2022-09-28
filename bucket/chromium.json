@@ -1,12 +1,12 @@
 {
-    "version": "105.0.5195.54",
+    "version": "106.0.5249.62",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web (Hibbiki's build)",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v105.0.5195.54-r1027018/mini_installer.sync.exe#/dl.7z",
-            "hash": "sha1:ad9046251b9ed6a06a27d900f355caf715d69016"
+            "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v106.0.5249.62-r1036826/mini_installer.sync.exe#/dl.7z",
+            "hash": "sha1:c506bd9144492bbcf55bc042833463843e75a670"
         }
     },
     "pre_install": "Expand-7zipArchive \"$dir\\chrome.7z\" \"$dir\" -ExtractDir 'Chrome-bin' -Removal",
