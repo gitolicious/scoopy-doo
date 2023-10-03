@@ -1,8 +1,8 @@
 {
     "homepage": "https://saleae.com/",
-    "version": "2.2.14",
-    "url": "https://downloads.saleae.com/logic2/Logic%20Setup%202.2.14-master.exe",
-    "hash": "e915a87014bd10946938219eca10d94f6c849af3e080ea179c7ccc3cc000868b",
+    "version": "2.4.10",
+    "url": "https://downloads.saleae.com/logic2/Logic-2.4.10-windows-x64.exe",
+    "hash": "36cbdff5157b8894bae1e69044c0810e22ecd12cada1963ddbd377876ab7ba59",
     "installer": {
         "script": [
             "Start-Process -Wait -FilePath \"$dir\\installer.exe\" -ArgumentList \"/extract:asd\" | out-null",
@@ -24,6 +24,6 @@
         "re": "Logic\\s+([\\d].[\\d].[\\w]+)"
     },
     "autoupdate": {
-        "url": "https://downloads.saleae.com/logic2/Logic%20Setup%20$version-master.exe"
+        "url": "https://downloads.saleae.com/logic2/Logic-$version-windows-x64.exe"
     }
 }
