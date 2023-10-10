@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.screenpresso.com/",
     "license": "https://www.screenpresso.com/software-license-agreement/",
-    "version": "2.1.14",
+    "version": "2.1.15",
     "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe",
-    "hash": "a8d8fd4f2d1a922bb9b73382cbccf707cd71a04f9b916a2cc576cab1352ba2ea",
+    "hash": "0e2a19d05c61a6d0537b8c2589601ee5087433a6df5d292942e57e0a9b33afc1",
     "bin": [
         [
             "Screenpresso.exe",
@@ -18,29 +18,8 @@
             "--portablemode"
         ]
     ],
-    "pre_install": "if (!(Test-Path \"$dir\\settings.xml\")) { New-Item -Force \"$dir\\settings.xml\" -ItemType File | out-null }",
-    "post_install": [
-        "if ((Get-Content \"$dir\\settings.xml\") -eq $Null) { Remove-Item \"$dir\\settings.xml\" }",
-        "if (Test-Path \"$dir\\UpdateBackup\") { Move-Item \"$dir\\UpdateBackup\\*.*\" -Destination \"$dir\" }"
-    ],
-    "uninstaller": {
-        "script": [
-            "Move-Item \"$dir\\settings.xml\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.jpg\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.gif\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.png\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.bmp\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.tif\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.mp4\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.wmv\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.ogv\" -Destination \"$dir\\UpdateBackup\"",
-            "Move-Item \"$dir\\*.webm\" -Destination \"$dir\\UpdateBackup\""
-        ]
-    },
     "persist": [
-        "UpdateBackup",
-        "BrandedScreenshots",
-        "Thumbnails"
+        "Medias"
     ],
     "checkver": {
         "url": "https://www.screenpresso.com/download/",
