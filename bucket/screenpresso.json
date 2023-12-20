@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.screenpresso.com/",
     "license": "https://www.screenpresso.com/software-license-agreement/",
-    "version": "2.1.15",
+    "version": "2.1.21",
     "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe",
-    "hash": "0e2a19d05c61a6d0537b8c2589601ee5087433a6df5d292942e57e0a9b33afc1",
+    "hash": "dae749cb49d1e70418196dab9b459f1830738c774b718a10f941d222bf1d6a36",
     "bin": [
         [
             "Screenpresso.exe",
@@ -18,9 +18,7 @@
             "--portablemode"
         ]
     ],
-    "persist": [
-        "Medias"
-    ],
+    "persist": "Medias",
     "checkver": {
         "url": "https://www.screenpresso.com/download/",
         "re": "Latest version \\(([\\w\\.]+)\\)"
