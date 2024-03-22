@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/PowerShell/PowerShell",
     "license": "MIT",
-    "version": "7.4.0-rc.1",
-    "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.4.0-rc.1/PowerShell-7.4.0-rc.1-win-x64.zip",
-    "hash": "db0ba81fba4dd1c6fb67730c7f42f0af300aeb01d56bbdaec5014f3fd3ce7874",
+    "version": "7.5.0-preview.2",
+    "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.0-preview.2/PowerShell-7.5.0-preview.2-win-x64.zip",
+    "hash": "e3b3025982632b9c8b1bac4ab16c72623e41e4db6d2cb770c6e5d22304cdd5f4",
     "bin": [
         [
             "pwsh.exe",
