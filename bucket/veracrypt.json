@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.veracrypt.fr/",
     "license": "tbd",
-    "version": "1.26.15",
-    "url": "https://launchpad.net/veracrypt/trunk/1.26.15/+download/VeraCrypt%20Portable%201.26.15.exe#/dl.7z",
-    "hash": "9678c92aea7f557b7522f6dc942fa1d00e813dfde4e7774c61e37c19e914a3a4",
+    "version": "1.26.20",
+    "url": "https://launchpad.net/veracrypt/trunk/1.26.20/+download/VeraCrypt%20Portable%201.26.20.exe#/dl.7z",
+    "hash": "89e86266d2a5814788ef3648ca9fffdc0c37550065cf1e349b62c37cecc89349",
     "bin": [
         [
             "veracrypt.exe"
