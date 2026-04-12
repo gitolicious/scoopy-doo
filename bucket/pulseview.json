@@ -5,7 +5,7 @@
     "architecture": {
         "32bit": {
             "url": "https://sigrok.org/download/binary/pulseview/pulseview-0.4.1-32bit-static-release-installer.exe#dl.7z",
-            "hash": "93ff2a99ff502060826162901518240503775cb2938869536ae07068831141cc"
+            "hash": "69bb97c5a830bba435526a7b3c9bb38b4bddee266f57567e042748327df2ccd6"
         },
         "64bit": {
             "url": "https://sigrok.org/download/binary/pulseview/pulseview-0.4.1-64bit-static-release-installer.exe#dl.7z",
